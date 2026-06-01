@@ -162,6 +162,7 @@ In place of common selectors like class, id or attribute we can use `document.qu
       }
       return sibs;
     }
+    ```
 
   + All next siblings
 
@@ -650,7 +651,7 @@ function exampleFilter(elem) {
   $newEl.insertBefore(selector);
 
   // Native (HTML string)
-  el.insertAdjacentHTML('beforebegin ', '<div id="container">Hello World</div>');
+  el.insertAdjacentHTML('beforebegin', '<div id="container">Hello World</div>');
 
   // Native (Element)
   const el = document.querySelector(selector);
@@ -1225,7 +1226,7 @@ Most of jQuery utilities are also found in the native API. Other advanced functi
     return context.body.children;
   }
   ```
-- [6.5](#6.4) <a name='6.5'></a> exists
+- [6.5](#6.5) <a name='6.5'></a> exists
 
 + exists
 
@@ -1273,7 +1274,7 @@ A promise represents the eventual result of an asynchronous operation. jQuery ha
   });
 
   // Native
-  Promise.all([$promise1, $promise2]).then([promise1Result, promise2Result] => {});
+  Promise.all([$promise1, $promise2]).then(([promise1Result, promise2Result]) => {});
   ```
 
 - [7.3](#7.3) <a name='7.3'></a> Deferred
